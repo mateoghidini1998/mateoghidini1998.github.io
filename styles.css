@@ -544,6 +544,79 @@ body{
     font-weight:600;
     text-decoration:none;
 }
+@media (max-width:375px) {
+    .animated-text h3{
+        font-size:0.5em;
+    }
+
+    .menu-btn{
+        margin-right: 4px;
+    }
+
+    .about .content .col-right {
+        
+        width: 100%;
+    }
+
+    .about .content .col-left{
+        position:relative;
+        width: 100%;
+    }
+
+    .about .content .col-right .paragraph-text {
+        font-size: 0.8em;
+    }
+
+    .skills .content .col-left p{
+        font-size: 0.8em;
+    }  
+
+    .skills .content .col-right .bar .info {
+        font-size: 11px;
+        
+    }
+
+    .skills .content .content-title{
+        position: relative;
+        width: 100%;
+    }
+
+    .contact .content .row .card{
+        margin-bottom: 15px;
+
+    }
+
+    .contact .content .row .card .contact-icon {
+        font-size: 2em;
+    }
+
+    .about .content .col-left .img-card img {
+        object-fit: contain;
+    }
+
+    .about .content .col-right {
+        margin-top: -160px;
+    }
+
+    .about .content .col-left .img-card img {
+        top:-50px;
+    }
+        
+}
+
+@media (max-width:414px){
+    .contact .content .row .card{
+        margin-bottom: 15px;
+
+    }
+    .animated-text{
+        font-size:0.5em;
+    }
+
+    .about .content .col-left .img-card img {
+        object-fit: contain;
+    }
+}
 
 @media (max-width: 1040px){
     header{
@@ -700,61 +773,3 @@ body{
         opacity:1;
     }
 }
-
-@media (max-width:414px){
-    .contact .content .row .card{
-        margin-bottom: 15px;
-
-    }
-}
-
-
-@media (max-width:375px) {
-    .animated-text h3{
-        font-size:1em;
-    }
-
-    .menu-btn{
-        margin-right: 4px;
-    }
-
-    .about .content .col-right {
-        
-        width: 100%;
-    }
-
-    .about .content .col-left{
-        position:relative;
-        width: 100%;
-    }
-
-    .about .content .col-right .paragraph-text {
-        font-size: 0.8em;
-    }
-
-    .skills .content .col-left p{
-        font-size: 0.8em;
-    }  
-
-    .skills .content .col-right .bar .info {
-        font-size: 11px;
-        
-    }
-
-    .skills .content .content-title{
-        position: relative;
-        width: 100%;
-    }
-
-    .contact .content .row .card{
-        margin-bottom: 15px;
-
-    }
-
-    .contact .content .row .card .contact-icon {
-        font-size: 2em;
-    }
-        
-}
-
-
