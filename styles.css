@@ -341,6 +341,11 @@ body{
     background: #26aee4;
 }
 
+.skills .content .col-right .bar .laravel:before{
+    width:65%;
+    background: #26e46f;
+}
+
 .skills .content .col-right .bar .python:before{
     width:70%;
     background: #e4e126;
