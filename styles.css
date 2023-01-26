@@ -32,7 +32,7 @@ section
 }
 
 .main .content h2{
- color:#fff;
+ color:black;
  font-size:2em;
  font-weight:500;   
 }
@@ -59,6 +59,79 @@ section
 
 .animated-text h3:nth-child(1){
     animation: text-move 10s infinite;
+}
+
+.timeline-section{
+    background-color: #24292d;
+    min-height: 100vh;
+    padding: 100px 15px;
+}
+.timeline-items{
+    max-width: 1000px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #2f363e;
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: left;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color:#4e9eff;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top:10px;
+}
+.timeline-date{
+    font-size: 18px;
+    color: #4e9eff;
+    margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2f363e;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.timeline-content:hover{
+    transform: scale(1.12);
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: #ffffff;
+    margin:0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.timeline-content p{
+    color: #c8c8c8;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
 }
 
 @keyframes text-move{
@@ -672,7 +745,7 @@ body{
 
     .menu-btn{
         position:absolute;
-        background:url(images/menu.png)no-repeat;
+        background:url(images/menu.png) no-repeat;
         background-size: 30px;
         background-position:center;
         width:40px;
@@ -685,7 +758,7 @@ body{
 
     .menu-btn.active{
         z-index: 999;
-        background-image: url(images/close.png)no-repeat;
+        background-image: url(images/close.png) no-repeat;
         background-size: 25px;
         background-position:center;
         transition: 0.3s ease;
@@ -778,3 +851,9 @@ body{
         opacity:1;
     }
 }
+
+
+
+
+
+
